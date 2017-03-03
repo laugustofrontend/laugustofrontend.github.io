@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Desenvolvimento de Site Pessoal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasaugustofrontend/lucasaugustofrontend.github.io.git"
+  },
+  "keywords": [
+    "HTML%",
+    "CSS3",
+    "JavaScript",
+    "jQuery",
+    "ECMAScript"
+  ],
+  "author": "Lucas Augusto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasaugustofrontend/lucasaugustofrontend.github.io/issues"
+  },
+  "homepage": "https://github.com/lucasaugustofrontend/lucasaugustofrontend.github.io#readme"
+}
