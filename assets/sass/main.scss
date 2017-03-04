@@ -1,7 +1,13 @@
 @charset "utf-8";
 
-@import "partials/reset";
+@import
+  "partials/palete_color",
+  "partials/mixins",
+  "partials/reset",
+  "partials/grid",
+  "partials/block/header",
+  "partials/block/personal_info",
+  "partials/block/education",
+  "partials/block/work",
+  "partials/block/skill";
 
-body {
-  background: dodgerblue;
-}

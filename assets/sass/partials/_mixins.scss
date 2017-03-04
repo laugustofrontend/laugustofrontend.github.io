@@ -1,0 +1,5 @@
+@mixin clearfix($diplay, $hidden) {
+  clear: both;
+  display: $diplay;
+  visibility: $hidden;
+}

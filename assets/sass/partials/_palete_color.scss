@@ -1,0 +1,18 @@
+@function colors($color, $type:base) {
+  $colors: (
+    color: (
+      base: #eaeaea,
+      medium: #e6e6e6,
+      dark: #000,
+      first: #bd5d00,
+      second: #49ffff,
+      third: #2eadff,
+      four: #00f931,
+      five: #b0e800,
+      six: #8700fe 
+    )
+  );
+  
+  $returnColor: map-get($colors, $color);
+  @return map-get($returnColor, $type);
+}

@@ -13,10 +13,10 @@ const svg = require('imagemin-svgo')
 
 const reload = bs.reload
 const path = {
-  css: 'assets/stylesheets/**/*',
-  img: 'assets/images/**/*',
+  css: 'assets/stylesheets/**/*.css',
+  img: 'assets/images/**/*.{jpg,png,svg}',
   imgOrigin: 'assets/imageOriginal/**/*',
-  js: 'assets/javascripts/**/*',
+  js: 'assets/javascripts/**/*.js',
   sass: 'assets/sass/**/*.scss'
 }
 
@@ -31,7 +31,9 @@ gulp.task('server', () => {
   })
 
   gulp.watch('*.html', reload)
-  gulp.watch([path.css, path.img, path.js, path.sass], reload)
+  gulp.watch([
+    'assets/**/*'
+  ], reload)
   gulp.watch(path.sass, ['sass', reload])
   gulp.watch(path.css, ['cssmin', reload])
   gulp.watch(path.js, ['lint-js', reload])
