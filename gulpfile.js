@@ -17,7 +17,7 @@ const path = {
   img: 'assets/images/**/*',
   imgOrigin: 'assets/imageOriginal/**/*',
   js: 'assets/javascripts/**/*',
-  sass: 'assets/sass/**/*'
+  sass: 'assets/sass/**/*.scss'
 }
 
 gulp.task('server', () => {
@@ -30,7 +30,7 @@ gulp.task('server', () => {
     logPrefix: 'Portfólio'
   })
 
-  gulp.watch('*..html', reload)
+  gulp.watch('*.html', reload)
   gulp.watch([path.css, path.img, path.js, path.sass], reload)
   gulp.watch(path.sass, ['sass', reload])
   gulp.watch(path.css, ['cssmin', reload])
@@ -47,7 +47,7 @@ gulp.task('cssmin', () => {
   gulp.src(path.css)
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('assets/stylesheets'))
+    .pipe(gulp.dest('assets/stylesheet'))
 })
 gulp.task('imagemin', () => {
   gulp.src(path.img)
