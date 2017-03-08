@@ -5,10 +5,16 @@
 
 * {
 	box-sizing: border-box;
+	position: relative;
 	&::after, &beffore {
 		content: '';
 		@include clearfix(block, hidden);
 	}
+}
+
+html, body {
+	height: 100%;	
+	width: 100%;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -33,7 +39,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: inline-block;
 }
 body {
 	line-height: 1;
@@ -57,4 +63,10 @@ table {
 h1, h2, h3,
 h4, h5, h6 {
 	width: 100%;
+}
+
+a {
+	text: {
+		decoration: none;
+	}
 }

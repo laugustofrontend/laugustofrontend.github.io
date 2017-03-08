@@ -5,9 +5,17 @@
   "partials/mixins",
   "partials/reset",
   "partials/grid",
+  "partials/font-awesome/font-awesome",
   "partials/block/header",
+  "partials/block/contact",
   "partials/block/personal_info",
   "partials/block/education",
   "partials/block/work",
   "partials/block/skill";
 
+.container-fluid {
+  background: colors(color, second);
+  @media (min-width: 80rem) {
+    width: 70%;
+  }
+}

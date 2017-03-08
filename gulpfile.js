@@ -42,7 +42,7 @@ gulp.task('server', () => {
 
 gulp.task('sass', () => {
   gulp.src(path.sass)
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('assets/stylesheets'))
 })
 gulp.task('cssmin', () => {

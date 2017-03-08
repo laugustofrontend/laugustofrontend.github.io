@@ -3,9 +3,11 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  width: 70%;
+  padding: {
+    left: 1rem;
+    right: 1rem; 
+  }
+  width: 100%;
 }
 
 .row {
@@ -26,8 +28,6 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
 }
 .row .row {
   margin: {

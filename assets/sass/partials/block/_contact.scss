@@ -1,0 +1,111 @@
+.infos {
+  &::before {
+    content: '';
+    @include clearfix(block, hidden);
+  }  
+  &_title {
+    background: colors(color, third);
+    color: colors(color, base);
+    font: {
+      size: 2rem;
+    }
+    margin: {
+      bottom: 1rem;
+    }
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+    width: 100%;
+    @include text-transform(capitalize);
+  }
+  &_about {
+    p {
+      color: lighten(colors(color, dark), 30);
+      font: {
+        size: 1.2rem;
+      }
+    }
+    @media (min-width: 768px) {
+      padding: {
+        right: 1rem;
+      }
+      .infos_title {
+        width: 60%;
+      }
+    }
+  }
+  &_contact {
+    background: lighten(colors(color, dark), 90);
+    color: lighten(colors(color, dark), 30);
+    font: {
+      size: 1.2rem;
+    }
+    margin: {
+      top: 1.5rem;
+    }
+    padding: {
+      bottom: 1rem;
+    }
+    .fa {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    @media (min-width: 1200px) {
+      .street {
+        margin: {
+          top: 2rem;
+        }
+      }
+    }
+    .street, .phone {
+      .fa {
+        top: .5rem;
+      }
+    }
+    .street, .phone, .email {
+      padding: {
+        left: 1.2rem;
+      }
+    }
+    .phone, .email {
+      margin: {
+        top: 1.8rem;
+      }
+    }
+    span {
+      display: block;
+      width: 100%;
+    }
+    a {
+      color: inherit;
+    }
+    p {
+      margin: {
+        left: 1rem;
+      }
+    }
+    .infos_title {
+      background: colors(color, dark);
+    }
+    @media (min-width: 768px) {
+      margin: {
+        top: 0;
+      }      
+    }
+  }
+  @media (min-width: 768px) {
+    border: {
+      top: .5rem solid colors(color, third);
+    }
+    margin: {
+      top: 3rem;
+    }
+    .infos_title {
+      position: absolute;
+      left: 0;
+      top: -4rem;
+    }
+  }
+}
