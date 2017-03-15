@@ -13,9 +13,47 @@
   "partials/block/work",
   "partials/block/skill";
 
+html, body {
+  font: {
+    family: 'Verdana', sans-serif;
+  }
+  height: 100%;
+  width: 100%;
+}
+
 .container-fluid {
   background: colors(color, second);
   @media (min-width: 80rem) {
     width: 70%;
+  }
+}
+
+.infos, .educations,
+.works, .skills {
+  border: {
+    top: .5rem solid colors(color, third);
+  }
+  margin: {
+    top: 4rem;
+  }
+  &_title {
+    background: colors(color, third);
+    color: colors(color, base);
+    font: {
+      size: 2rem;
+    }
+    margin: {
+      bottom: 1rem;
+    }
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+    }
+    @include text-transform(capitalize);
+    @media (min-width: 768px) {
+      position: absolute;
+      top: -4rem;
+    }
   }
 }

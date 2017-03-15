@@ -6,7 +6,7 @@
   .name {
     color: colors(color, third);
     font: {
-      size: 5rem;
+      size: 4rem;
       weight: bold;
     }
     @extend %text-center;
@@ -24,7 +24,7 @@
   .job {
     color: lighten(colors(color, dark), 45);
     font: {
-      size: 2rem;
+      size: 1.8rem;
     }
     @extend %text-center;
     @media (min-width: 768px) {
