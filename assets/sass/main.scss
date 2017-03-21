@@ -23,9 +23,30 @@ html, body {
 }
 
 .container-fluid {
-  background: colors(color, second);
+  position: relative;  
   @media (min-width: 80rem) {
     width: 70%;
+    &::before {
+      background: darken(colors(color, third), 20);
+      content: '';
+      @include clearfix(block, visible);
+      width: 3rem;
+      height: 100%;
+      position: absolute;
+      left: -3rem;
+      top: 0;
+    }
+    &::after {
+      background: darken(colors(color, third), 30);
+      content: '';
+      @include clearfix(block, visible);
+      width: .55rem;
+      height: 100%;
+      position: absolute;
+      left: -.5rem;
+      top: 0;
+      z-index: 1;
+    }
   }
 }
 
@@ -51,10 +72,37 @@ html, body {
       bottom: 1rem;
       left: 1rem;
     }
+    position: relative;
     @include text-transform(capitalize);
     @media (min-width: 768px) {
       position: absolute;
       top: -4rem;
+    }
+    @media(min-width: 1024px) {
+      &::before {
+        background: colors(color, third);
+        content: '';
+        @include clearfix(block, visible);
+        position: absolute;
+        left: -1.1rem;
+        top: 0;
+        width: 1.2rem;
+        height: 100%;
+        z-index: 9;
+      }
+      &::after {
+        content: '';
+        @include clearfix(inline-block, visible);
+        border: {
+          top: .65rem solid darken(colors(color, third), 30);
+          bottom: .65rem solid transparent;
+          left: .65rem solid transparent;
+        }
+        position: absolute;
+        left: -1.1rem;
+        top: 100%;
+        z-index: 8;
+      }
     }
   }
 }

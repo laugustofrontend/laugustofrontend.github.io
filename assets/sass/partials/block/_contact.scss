@@ -4,14 +4,17 @@
     @include clearfix(block, hidden);
   }
   &_about {
-    padding: {
-      right: 1rem;
+    @media(min-width: 1024px) {
+      padding: {
+        right: 1rem;
+      }
     }
     p {
       color: lighten(colors(color, dark), 30);
       font: {
         size: 1.2rem;
       }
+      padding: 1rem;
     }
     @media (min-width: 768px) {
       padding: {
@@ -85,6 +88,9 @@
       background: colors(color, dark);
       @media (min-width: 768px) {
         width: 100%;
+        &::before, &::after {
+          @include clearfix(block, hidden);
+        }
       }
     }
     @media (min-width: 768px) {

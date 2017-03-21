@@ -6,8 +6,7 @@
   }
 }
 
-.education {
-  
+.education {  
   &_title {
     font: {
       size: 1.1rem;
@@ -25,7 +24,7 @@
   }
   &_college {
     @extend %border_bottom;
-    @include space(1rem, 0);
+    @include space(1rem, .5rem);
     + .education_college {
       margin: {
         top: 1.3rem;
@@ -63,6 +62,8 @@
       top: 1rem;
     }
     .education_title {
+      background: colors(color, third);
+      color: lighten(colors(color, base), 100);
       font: {
         size: 1.5rem;
       }
@@ -93,6 +94,7 @@
       }
       &_content {
         line-height: 1.5;
+        @include space(0, .5rem);
       }
       @media (min-width: 1024px) {
         &_content {
