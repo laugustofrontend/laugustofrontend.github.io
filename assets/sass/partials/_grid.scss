@@ -24,11 +24,6 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  @media(min-width: 992px) {
-    padding: {
-      right: 1rem;
-    }
-  }
 }
 .row .row {
   margin: {

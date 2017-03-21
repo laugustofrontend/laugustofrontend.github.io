@@ -1,0 +1,81 @@
+{
+  "skills": [
+    {
+      "name": "HTML5",
+      "skill": 90,
+      "column": "11"
+    },
+    {
+      "name": "CSS3",
+      "skill": 90,
+      "column": "11"
+    },
+    {
+      "name": "JavaScript",
+      "skill": 50,
+      "column": "6"
+    },
+    {
+      "name": "PHP",
+      "skill": 20,
+      "column": "2"
+    },
+    {
+      "name": "Ruby",
+      "skill": 20,
+      "column": "2"
+    },
+    {
+      "name": "Python",
+      "skill": 20,
+      "column": "2"
+    },
+    {
+      "name": "NodeJs",
+      "skill": 20,
+      "column": "2"
+    },
+    {
+      "name": "OOP",
+      "skill": 20,
+      "column": "2"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Bootstrap",
+      "skill": 70,
+      "column": "9"
+    },
+    {
+      "name": "Foundation",
+      "skill": 70,
+      "column": "9"
+    },
+    {
+      "name": "jQuery",
+      "skill": 50,
+      "column": "6"
+    },
+    {
+      "name": "AngularJS 1 e 2",
+      "skill": 30,
+      "column": "4"
+    },
+    {
+      "name": "EmberJS",
+      "skill": 20,
+      "column": "2"
+    },
+    {
+      "name": "HandlerbarsJS",
+      "skill": 20,
+      "column": "2"
+    },
+    {
+      "name": "MeteorJS",
+      "skill": 20,
+      "column": "2"
+    }
+  ]
+}

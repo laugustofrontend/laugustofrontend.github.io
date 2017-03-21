@@ -34,7 +34,7 @@ gulp.task('server', () => {
   gulp.watch([
     'assets/**/*'
   ], reload)
-  gulp.watch(path.sass, ['sass', reload])
+  gulp.watch(path.sass, ['sass'])
   gulp.watch(path.css, ['cssmin', reload])
   gulp.watch(path.js, ['lint-js', reload])
   gulp.watch(path.img, ['imagemin', reload])

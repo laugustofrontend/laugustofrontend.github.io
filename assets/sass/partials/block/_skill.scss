@@ -1,5 +1,64 @@
 .skills {
-  &_title {
-    width: 80%;
+  @media (min-width: 768px) {
+    &_title {
+      width: 35%;
+    }
+  }
+  .skill {
+    margin: {
+      top: 1rem;
+    }
+    padding: {
+      left: 1rem;
+    }
+    &_name {
+      font: {
+        size: 2rem;
+      }
+      margin: {
+        bottom: .5rem;
+      }
+    }
+    &_percent {
+      color: transparent;
+      position: relative;
+      &::before {
+        border: {
+          radius: 1rem;
+        }
+        content: 'lucas';
+        @include clearfix(block, visible);
+      }
+    }
+    &_90 {
+      &::before {
+        @extend %skill90;
+        @media (min-width: 48rem) {
+          margin: {
+            top: .5rem;
+          }
+        }
+      }
+    }
+    &_70 {
+      &::before {
+        @extend %skill70;
+      }
+    }
+    &_50 {
+      &::before {
+        @extend %skill50;
+      }
+    }
+    &_30 {
+      &::before {
+        @extend %skill30;
+      }
+    }
+    &_20 {
+      &::before {
+        @extend %skill20;
+      }
+    }
   }
 }
