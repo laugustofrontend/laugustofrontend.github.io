@@ -52,11 +52,16 @@ html, body {
 
 .infos, .educations,
 .works, .skills {
-  border: {
-    top: .5rem solid colors(color, third);
+  
+  @media (min-width: 768px) {
+    border: {
+      top: .5rem solid colors(color, third);
+    }
   }
-  margin: {
-    top: 4rem;
+  @media(min-width: 1280px) {
+    margin: {
+      top: 4rem;
+    }
   }
   &_title {
     background: colors(color, third);
@@ -79,12 +84,14 @@ html, body {
       top: -4rem;
     }
     @media(min-width: 1024px) {
+      &::after, &::before {
+        left: -1.1rem;
+        position: absolute;
+      }
       &::before {
         background: colors(color, third);
         content: '';
         @include clearfix(block, visible);
-        position: absolute;
-        left: -1.1rem;
         top: 0;
         width: 1.2rem;
         height: 100%;
@@ -98,10 +105,13 @@ html, body {
           bottom: .65rem solid transparent;
           left: .65rem solid transparent;
         }
-        position: absolute;
-        left: -1.1rem;
         top: 100%;
         z-index: 8;
+      }
+    }
+    @media (min-width: 1280px) {
+      &::after, &::before {
+        left: -1rem;
       }
     }
   }

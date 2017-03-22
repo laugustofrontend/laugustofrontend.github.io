@@ -1,6 +1,11 @@
 .works {
   @media (min-width: 768px) {
     &_title {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1280px) {
+    &_title  {
       width: 40%;
     }
   }
